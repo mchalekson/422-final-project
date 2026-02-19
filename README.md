@@ -33,9 +33,14 @@ The workflow combines data enrichment via the YouTube Data API, exploratory anal
 ├── youtube_data_enriched.csv
 ├── Notebook Scripts/
 │   ├── YT-pipeline.ipynb
+│   ├── YT-pipeline.pdf
 │   ├── EDA.ipynb
+│   ├── EDA.pdf
 │   ├── EDA_enriched_API.ipynb
-│   └── msds-422-final-project.ipynb
+│   ├── EDA_enriched_API.pdf
+│   ├── modeling_4_models.ipynb
+│   ├── msds-422-final-project.ipynb
+│   └── msds-422-final-project.pdf
 ├── Literature Reviews/
 │   ├── Eddie/
 │   ├── Max/
@@ -65,6 +70,15 @@ The workflow combines data enrichment via the YouTube Data API, exploratory anal
 
 - `Notebook Scripts/EDA_enriched_API.ipynb`
   - Exploratory data analysis on the YouTube video IDs. 
+
+- `Notebook Scripts/modeling_4_models.ipynb`
+  - End-to-end modeling notebook for four core models:
+    - Elastic Net
+    - KNN Regressor
+    - Random Forest Regressor
+    - MLP Regressor
+  - Includes Random Forest hyperparameter tuning with `GridSearchCV`.
+  - Includes a checklist/validation cell to explicitly mark required four-model coverage.
 
 - `Notebook Scripts/msds-422-final-project.ipynb`
   - Integrated project narrative (problem framing, literature, CRISP-DM framing, analysis/modeling context).
@@ -105,7 +119,8 @@ YOUTUBE_API_KEY=your_key_here
 1. `Notebook Scripts/YT-pipeline.ipynb` (if you need to regenerate enriched data)
 2. `Notebook Scripts/EDA.ipynb`
 3. `Notebook Scripts/EDA_enriched_API.ipynb`
-4. `Notebook Scripts/msds-422-final-project.ipynb`
+4. `Notebook Scripts/modeling_4_models.ipynb`
+5. `Notebook Scripts/msds-422-final-project.ipynb`
 
 ---
 
@@ -126,4 +141,4 @@ YOUTUBE_API_KEY=your_key_here
 
 ## Status
 
-This repository contains the dataset artifacts, exploratory analysis notebooks, enrichment pipeline notebook, and course milestone report used for the MSDS 422 final project workflow.
+This repository contains raw/enriched dataset artifacts, enrichment and EDA notebooks, a four-model training/evaluation notebook, and supporting course reports for the MSDS 422 final project workflow.
