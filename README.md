@@ -39,6 +39,8 @@ The workflow combines data enrichment via the YouTube Data API, exploratory anal
 │   ├── EDA_enriched_API.ipynb
 │   ├── EDA_enriched_API.pdf
 │   ├── modeling_4_models.ipynb
+│   ├── modeling_4_models.html
+│   ├── modeling_4_models.pdf
 │   ├── msds-422-final-project.ipynb
 │   └── msds-422-final-project.pdf
 ├── Literature Reviews/
@@ -79,6 +81,9 @@ The workflow combines data enrichment via the YouTube Data API, exploratory anal
     - MLP Regressor
   - Includes Random Forest hyperparameter tuning with `GridSearchCV`.
   - Includes a checklist/validation cell to explicitly mark required four-model coverage.
+  - Exported deliverables are included as:
+    - `Notebook Scripts/modeling_4_models.html`
+    - `Notebook Scripts/modeling_4_models.pdf`
 
 - `Notebook Scripts/msds-422-final-project.ipynb`
   - Integrated project narrative (problem framing, literature, CRISP-DM framing, analysis/modeling context).
