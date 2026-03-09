@@ -60,37 +60,38 @@ The workflow combines data enrichment via the YouTube Data API, exploratory anal
 
 ---
 
+
 ## Notebooks and their purpose
 
 - `Notebook Scripts/YT-pipeline.ipynb`
-  - Enriches `youtube_data.csv` using YouTube Data API.
+  - Enriches `youtube_data.csv` using the YouTube Data API.
   - Produces `youtube_data_enriched.csv`.
-  - Requires `YOUTUBE_API_KEY`.
+  - Requires a valid `YOUTUBE_API_KEY` in a `.env` file.
 
 - `Notebook Scripts/EDA.ipynb`
-  - Exploratory data analysis on base/raw data.
+  - Exploratory data analysis on the base/raw dataset.
 
 - `Notebook Scripts/EDA_enriched_API.ipynb`
-  - Exploratory data analysis on the YouTube video IDs. 
+  - Exploratory data analysis on the enriched dataset (`youtube_data_enriched.csv`).
 
 - `Notebook Scripts/modeling_4_models.ipynb`
-  - End-to-end modeling notebook for four core models:
+  - End-to-end modeling notebook covering four regression models:
     - Elastic Net
     - KNN Regressor
-    - Random Forest Regressor
+    - Random Forest Regressor (with hyperparameter tuning via `GridSearchCV`)
     - MLP Regressor
-  - Includes Random Forest hyperparameter tuning with `GridSearchCV`.
-  - Includes a checklist/validation cell to explicitly mark required four-model coverage.
-  - Exported deliverables are included as:
-    - `Notebook Scripts/modeling_4_models.html`
-    - `Notebook Scripts/modeling_4_models.pdf`
+  - Includes a checklist/validation cell for model coverage.
+  - Exported deliverables: HTML and PDF versions.
 
 - `Notebook Scripts/msds-422-final-project.ipynb`
-  - Integrated project narrative (problem framing, literature, CRISP-DM framing, analysis/modeling context).
+  - Integrated project narrative: problem framing, literature review, CRISP-DM framing, and summary of analysis/modeling.
+
+> **Note:** All notebooks must be executed cell-by-cell to generate outputs. Outputs are not pre-saved—run all cells and save before sharing or submitting. Update any file paths as needed for your environment.
 
 ---
 
-## Setup
+
+## Setup & Environment
 
 ### 1) Create and activate a Python environment
 
@@ -119,31 +120,44 @@ YOUTUBE_API_KEY=your_key_here
 
 ---
 
+
 ## Recommended execution order
 
-1. `Notebook Scripts/YT-pipeline.ipynb` (if you need to regenerate enriched data)
+1. `Notebook Scripts/YT-pipeline.ipynb` (run if you need to regenerate enriched data)
 2. `Notebook Scripts/EDA.ipynb`
 3. `Notebook Scripts/EDA_enriched_API.ipynb`
 4. `Notebook Scripts/modeling_4_models.ipynb`
 5. `Notebook Scripts/msds-422-final-project.ipynb`
 
----
-
-## Notes for reproducibility
-
-- Some notebook cells include absolute local paths from the original development machine.
-- If a notebook fails to locate files, update path variables (e.g., project root / CSV paths) to your local workspace.
-- Re-run all cells from top to bottom after adjusting paths and environment variables.
+> **Tip:** After running each notebook, save it to preserve outputs. If you encounter missing outputs or errors, check file paths and environment variables.
 
 ---
+
+
+## Reproducibility & Troubleshooting
+
+- Notebooks may contain absolute paths from the original development machine. Update all file paths to match your local workspace.
+- Always re-run all cells from top to bottom after adjusting paths or environment variables.
+- If outputs are missing, ensure you have executed all cells and saved the notebook.
+- If you encounter errors related to missing files or API keys, check your `.env` file and data file locations.
+
+---
+
 
 ## References and supporting materials
 
-- Literature review PDFs are organized by team member under `Literature Reviews/`.
-- Milestone report PDF is in `write-up-reports/`.
+- Literature review PDFs are organized by team member under `Literature Reviews/` (see subfolders for each member).
+- Milestone and project report PDFs are in `write-up-reports/`.
 
 ---
 
+
 ## Status
 
-This repository contains raw/enriched dataset artifacts, enrichment and EDA notebooks, a four-model training/evaluation notebook, and supporting course reports for the MSDS 422 final project workflow.
+This repository contains:
+- Raw and enriched datasets
+- Data enrichment, EDA, and modeling notebooks (with HTML/PDF exports)
+- Literature review PDFs (by team member)
+- Project milestone and report PDFs
+
+All code and notebooks are ready for execution and review. Please ensure you run and save all notebooks to generate outputs before final submission or sharing.
