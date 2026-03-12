@@ -15,8 +15,6 @@ The primary polished submission is in [`Final-Notebook-Script/`](./Final-Noteboo
 - [`Final-Notebook-Script/Final_Report_Complete.html`](./Final-Notebook-Script/Final_Report_Complete.html): easiest version to review in a browser
 - [`Final-Notebook-Script/Final_Report_Complete.pdf`](./Final-Notebook-Script/Final_Report_Complete.pdf): static export for submission/sharing
 
-A second copy of the final report also appears under [`Notebook Scripts/`](./Notebook%20Scripts) alongside the component notebooks used to build it.
-
 ## Project summary
 
 The modeling target is video virality, operationalized as `log1p(view_count)`. The feature set combines:
